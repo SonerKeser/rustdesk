@@ -1035,7 +1035,7 @@ pub fn get_custom_rendezvous_server(custom: String) -> String {
     if !config::PROD_RENDEZVOUS_SERVER.read().unwrap().is_empty() {
         return config::PROD_RENDEZVOUS_SERVER.read().unwrap().clone();
     }
-    "rdp.sonerkeser.com".to_owned()
+    "rdp.vowtech.com.tr".to_owned()
 }
 
 #[inline]
@@ -1067,7 +1067,7 @@ fn get_api_server_(api: String, custom: String) -> String {
         return api.to_owned();
     }
     let _ = custom;
-    "https://rdp.sonerkeser.com".to_owned()
+    "https://rdp.vowtech.com.tr".to_owned()
 }
 
 #[inline]
